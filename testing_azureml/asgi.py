@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "viceversa.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "testing_azureml.settings")
 
 application = get_asgi_application()

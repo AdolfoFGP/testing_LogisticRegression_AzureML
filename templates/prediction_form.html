@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Formulario de predicción</title>
+</head>
+<body>
+    <h1>Formulario de predicción</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Aquí debes incluir todos los campos necesarios del formulario -->
+        <label for="symboling">Symboling:</label>
+        <input type="text" name="symboling" value="3"><br><br>
+
+        <label for="normalized-losses">Normalized Losses:</label>
+        <input type="text" name="normalized-losses" value="1.0"><br><br>
+
+        <label for="make">Make:</label>
+        <input type="text" name="make" value="alfa-romero"><br><br>
+
+        <label for="fuel-type">Fuel Type:</label>
+        <input type="text" name="fuel-type" value="gas"><br><br>
+
+        <label for="aspiration">Aspiration:</label>
+        <input type="text" name="aspiration" value="std"><br><br>
+
+        <label for="num-of-doors">Number of Doors:</label>
+        <input type="text" name="num-of-doors" value="two"><br><br>
+
+        <label for="body-style">Body Style:</label>
+        <input type="text" name="body-style" value="convertible"><br><br>
+
+        <label for="drive-wheels">Drive Wheels:</label>
+        <input type="text" name="drive-wheels" value="rwd"><br><br>
+
+        <label for="engine-location">Engine Location:</label>
+        <input type="text" name="engine-location" value="front"><br><br>
+
+        <label for="wheel-base">Wheel Base:</label>
+        <input type="text" name="wheel-base" value="88.6"><br><br>
+
+        <label for="length">Length:</label>
+        <input type="text" name="length" value="168.8"><br><br>
+
+        <label for="width">Width:</label>
+        <input type="text" name="width" value="64.1"><br><br>
+
+        <label for="height">Height:</label>
+        <input type="text" name="height" value="48.8"><br><br>
+
+        <label for="curb-weight">Curb Weight:</label>
+        <input type="text" name="curb-weight" value="2548"><br><br>
+
+        <label for="engine-type">Engine Type:</label>
+        <input type="text" name="engine-type" value="dohc"><br><br>
+
+        <label for="num-of-cylinders">Number of Cylinders:</label>
+        <input type="text" name="num-of-cylinders" value="four"><br><br>
+
+        <label for="engine-size">Engine Size:</label>
+        <input type="text" name="engine-size" value="130"><br><br>
+
+        <label for="fuel-system">Fuel System:</label>
+        <input type="text" name="fuel-system" value="mpfi"><br><br>
+
+        <label for="bore">Bore:</label>
+        <input type="text" name="bore" value="3.47"><br><br>
+
+        <label for="stroke">Stroke:</label>
+        <input type="text" name="stroke" value="2.68"><br><br>
+
+        <label for="compression-ratio">Compression Ratio:</label>
+        <input type="text" name="compression-ratio" value="9"><br><br>
+
+        <label for="horsepower">Horsepower:</label>
+        <input type="text" name="horsepower" value="111"><br><br>
+
+        <label for="peak-rpm">Peak RPM:</label>
+        <input type="text" name="peak-rpm" value="5000"><br><br>
+
+        <label for="city-mpg">City MPG:</label>
+        <input type="text" name="city-mpg" value="21"><br><br>
+
+        <label for="highway-mpg">Highway MPG:</label>
+        <input type="text" name="highway-mpg" value="27"><br><br>
+
+        
+
+        <!-- Resto de campos del formulario -->
+
+        <input type="submit" value="Predecir">
+    </form>
+</body>
+</html>

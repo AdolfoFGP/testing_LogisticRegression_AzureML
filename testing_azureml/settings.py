@@ -11,9 +11,19 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+# Ruta al archivo de clave de API de Azure
+AZURE_API_KEY_FILE = os.path.join(BASE_DIR, 'azure_api_key.txt')
+
+# Función para leer el archivo de clave de API
+def get_azure_api_key():
+    with open(AZURE_API_KEY_FILE, 'r') as file:
+        return file.read().strip()
 
 
 # Quick-start development settings - unsuitable for production
@@ -47,9 +57,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django.middleware.csrf.CsrfViewMiddleware', #ese agrege
 ]
 
-ROOT_URLCONF = "viceversa.urls"
+ROOT_URLCONF = "testing_azureml.urls"
 
 TEMPLATES = [
     {
@@ -67,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "viceversa.wsgi.application"
+WSGI_APPLICATION = "testing_azureml.wsgi.application"
 
 
 # Database
