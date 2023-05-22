@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware', #ese agrege
 ]
 
-ROOT_URLCONF = "testing_azureml.urls"
+ROOT_URLCONF = "testing_azureml_clasification.urls"
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "testing_azureml.wsgi.application"
+WSGI_APPLICATION = "testing_azureml_clasification.wsgi.application"
 
 
 # Database
